@@ -33,7 +33,7 @@
             android:textSize="18sp"
             algolia:attribute='@{"name"}'/>
 
-        <TextView
+        <fr.wildcodeschool.amazin.NotNullTextView
             android:id="@+id/product_manufacturer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
