@@ -17,5 +17,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Searcher searcher = new Searcher(ALGOLIA_APP_ID, ALGOLIA_API_KEY, ALGOLIA_INDEX_NAME); // Initialize Algolia
+        new InstantSearchHelper(this, searcher); // Link this activity to the Searcher
     }
 }
