@@ -18,5 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
         Searcher searcher = new Searcher(ALGOLIA_APP_ID, ALGOLIA_API_KEY, ALGOLIA_INDEX_NAME); // Initialize Algolia
         new InstantSearchHelper(this, searcher); // Link this activity to the Searcher
+        searcher.search(); // Show results for empty query on app launch
     }
 }
