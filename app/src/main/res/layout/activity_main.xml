@@ -16,4 +16,11 @@
         algolia:autofocus="true"
         algolia:iconifiedByDefault="false"
         algolia:queryHint="Search our products"/>
+
+    <com.algolia.instantsearch.ui.views.Hits
+        android:id="@+id/hits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        algolia:itemLayout="@layout/hits_item"
+        algolia:remainingItemsBeforeLoading="5"/>
 </LinearLayout>
