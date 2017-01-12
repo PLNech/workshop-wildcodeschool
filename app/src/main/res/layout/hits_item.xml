@@ -31,7 +31,8 @@
             android:maxLines="2"
             android:textColor="#111"
             android:textSize="18sp"
-            algolia:attribute='@{"name"}'/>
+            algolia:attribute='@{"name"}'
+            algolia:highlightingColor='@{"@color/colorHighlight"}'/>
 
         <fr.wildcodeschool.amazin.NotNullTextView
             android:id="@+id/product_manufacturer"
@@ -39,7 +40,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/product_name"
             android:layout_toEndOf="@id/product_image"
-            algolia:attribute='@{"manufacturer"}'/>
+            algolia:attribute='@{"manufacturer"}'
+            algolia:highlighted="@{true}"/>
 
         <TextView
             android:id="@+id/product_price"
@@ -63,6 +65,7 @@
             android:maxWidth="90dp"
             android:textColor="@android:color/darker_gray"
             android:textSize="12sp"
-            algolia:attribute='@{"category"}'/>
+            algolia:attribute='@{"category"}'
+            algolia:highlighted='@{true}'/>
     </RelativeLayout>
 </layout>
