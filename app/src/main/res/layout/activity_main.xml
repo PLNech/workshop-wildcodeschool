@@ -17,6 +17,13 @@
         algolia:iconifiedByDefault="false"
         algolia:queryHint="Search our products"/>
 
+    <com.algolia.instantsearch.ui.views.Stats
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        algolia:resultTemplate="{nbHits} results in {processingTimeMS} ms"
+        algolia:errorTemplate="Error: {error}"/>
+
     <com.algolia.instantsearch.ui.views.Hits
         android:id="@+id/hits"
         android:layout_width="match_parent"
